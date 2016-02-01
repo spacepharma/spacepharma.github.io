@@ -12,7 +12,7 @@ body {
 }
 
 #app {
-  height: 100%;
+
 }
 
 a {
@@ -26,26 +26,12 @@ a {
 }
 
 main {
-  height: 100%;
-  padding: 3em 2em;
   background: white;
-  overflow: scroll;
 }
 
 h1 {
   font-weight: 700;
   font-size: 3.75em;
-}
-
-@media screen and (max-width: 40em) {
-  main {
-    font-size: 80%;
-  }
-
-  h1 {
-    padding-top: 1em;
-    font-size: 2.5em;
-  }
 }
 
 .bm-burger-button {
