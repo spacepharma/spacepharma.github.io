@@ -2,15 +2,21 @@
   "posts": [
     {
       "author":"Elad Amsalem",
+      "authorPosition": "Software Developer",
+      "email": "elad.ams@gmail.com",
       "publishedAt": "25-jan-2016 12:32:00",
       "filename": "1.md",
-      "title": "When should you use microgravity? - Part 1"
+      "title": "When should you use microgravity? - Part 2",
+      "heroImageSrc": "https://cdn-images-1.medium.com/max/1200/1*R8M5hRIV1y9aQcvjJe5PTQ.jpeg"
     },
     {
       "author":"Elad Amsalem",
+      "authorPosition": "Software Developer",
+      "email": "elad.ams@gmail.com",
       "publishedAt": "01-feb-2016",
       "filename": "2.md",
-      "title": "When should you use microgravity? - Part 2"
+      "title": "When should you use microgravity? - Part 2",
+      "heroImageSrc": "https://cdn-images-1.medium.com/max/1200/1*R8M5hRIV1y9aQcvjJe5PTQ.jpeg"
     }
   ]
 }
