@@ -4,16 +4,15 @@ html {
 }
 
 body {
-  background: white;
   color: #111;
   font-family: 'Titillium Web', system;
   overflow-x: visable;
 }
 
+
 a {
   color: #4e4a46;
   text-decoration: none;
-
   &:hover,
   &:focus {
     color: #c94e50;
@@ -31,8 +30,7 @@ h1 {
   height: 30px;
   left: 36px;
   top: 36px;
-
-
+  opacity: 0.7;
 }
 
 .right .bm-burger-button {
@@ -49,24 +47,15 @@ h1 {
 }
 
 .bm-menu {
-  padding: 2.5em 1.5em 0;
-  fontSize: 2.15em;
+  padding: 5.5em 1.5em 0;
   background: white;
-
-  a {
-    color: #b8b7ad;
-
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
-  }
 }
 
-.bm-item-list a {
+.bm-item-list > a {
   padding: 0.8em;
   color: #b8b7ad;
   padding: 0.8em;
+  font-size: 1.25em;
 
   span {
     margin-left: 10px;
