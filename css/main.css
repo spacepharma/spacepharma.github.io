@@ -8,6 +8,7 @@ body {
   font-family: 'Titillium Web', system;
   overflow-x: hidden;
   background-color: #3e3e3e;
+  min-width: 450px;
 }
 
 
@@ -21,9 +22,8 @@ a {
 }
 
 h1 {
-  -webkit-animation: fadein 3s;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 42px;
   font-family: 'Titillium Web', system;
 }
 
@@ -42,7 +42,7 @@ h1 {
 }
 
 .bm-burger-bars {
-  background: #373a47;
+  background: #ccc;
 }
 
 .bm-morph-shape {
@@ -124,4 +124,92 @@ canvas.canvid {
     height: auto;
     line-height: 20px;
     text-align: center;
+}
+
+.dotstyle ul {
+  transform: rotate(90deg);
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 10px;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+
+	cursor: pointer;
+	position: absolute;
+}
+
+.dotstyle li a:focus {
+	outline: none;
+}
+
+.dotstyle-hop li a {
+	border: 1px solid #ccc;
+	background: transparent;
+}
+
+.dotstyle-hop li a::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	border-radius: 50%;
+	visibility: hidden;
+	background: rgb(108, 178, 235);
+	opacity: 0;
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	-webkit-transform-origin: -200% 50%;
+	transform-origin: -200% 50%;
+	-webkit-transition: -webkit-transform 0.3s ease 0.3s, opacity 0.3s ease, visibility 0s 0.3s ease;
+	transition: transform 0.3s ease 0.3s, opacity 0.3s ease, visibility 0s 0.3s ease;
+}
+
+.dotstyle-hop li a:focus {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.dotstyle-hop li.current-from-right a::after {
+	-webkit-transition: none;
+	transition: none;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-transform-origin: 300% 50%;
+	transform-origin: 300% 50%;
+}
+
+.dotstyle-hop li.current a::after {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
+	transition: transform 0.3s ease, opacity 0.3s ease;
 }
