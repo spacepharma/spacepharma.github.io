@@ -11,13 +11,12 @@ body {
   min-width: 450px;
 }
 
-
-a {
+.bm-item-list > a {
   color: #4e4a46;
   text-decoration: none;
   &:hover,
   &:focus {
-    color: #c94e50;
+    color: rgb(108, 178, 255);
   }
 }
 
@@ -52,16 +51,18 @@ h1 {
 .bm-menu {
   padding: 5.5em 1.5em 0;
   background: white;
+
 }
 
 .bm-item-list > a {
   padding: 0.8em;
-  color: #b8b7ad;
+  color: rgb(108, 178, 255);
   padding: 0.8em;
   font-size: 1.25em;
 
+  margin-left: 55%;
   span {
-    margin-left: 10px;
+
     font-weight: 700;
   }
 }
@@ -126,11 +127,14 @@ canvas.canvid {
     text-align: center;
 }
 
+.dot-container {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+}
+
 .dotstyle ul {
-  transform: rotate(90deg);
-	position: fixed;
-	margin: 0;
-	padding: 0;
+  transform: rotateZ(90deg);
 	list-style: none;
 	cursor: default;
 	-webkit-touch-callout: none;
@@ -142,74 +146,53 @@ canvas.canvid {
 }
 
 .dotstyle li {
+  padding: 10px;
 	position: relative;
 	display: block;
 	float: left;
-	margin: 0 10px;
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
 	cursor: pointer;
 }
 
-.dotstyle li a {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	outline: none;
-	border-radius: 50%;
-	background-color: #fff;
-	background-color: rgba(255, 255, 255, 0.3);
-
-	cursor: pointer;
-	position: absolute;
-}
-
-.dotstyle li a:focus {
-	outline: none;
-}
-
-.dotstyle-hop li a {
-	border: 1px solid #ccc;
-	background: transparent;
-}
-
-.dotstyle-hop li a::after {
+.dotstyle-fall li::after {
 	content: '';
+	position: absolute;
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	left: 0;
-	border-radius: 50%;
 	visibility: hidden;
-	background: rgb(108, 178, 235);
-	opacity: 0;
-	-webkit-transform: rotate(-180deg);
-	transform: rotate(-180deg);
-	-webkit-transform-origin: -200% 50%;
-	transform-origin: -200% 50%;
-	-webkit-transition: -webkit-transform 0.3s ease 0.3s, opacity 0.3s ease, visibility 0s 0.3s ease;
-	transition: transform 0.3s ease 0.3s, opacity 0.3s ease, visibility 0s 0.3s ease;
+	opacity: 0.5;
+	left: 0;
+	background-color: rgb(108, 178, 255);
+	border-radius: 50%;
+	-webkit-transform: translateY(-200%);
+	transform: translateY(-200%);
+	-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
+	transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
 }
 
-.dotstyle-hop li a:focus {
-	background: rgba(255, 255, 255, 0.2);
+.dotstyle-fall li a {
+	-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+	transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
-.dotstyle-hop li.current-from-right a::after {
-	-webkit-transition: none;
-	transition: none;
-	-webkit-transform: rotate(180deg);
-	transform: rotate(180deg);
-	-webkit-transform-origin: 300% 50%;
-	transform-origin: 300% 50%;
+.dotstyle-fall li:hover a,
+.dotstyle-fall li a:focus,
+.dotstyle-fall li.current a {
+	background-color: #fff;
 }
 
-.dotstyle-hop li.current a::after {
-	visibility: visible;
+.dotstyle-fall li.current::after {
 	opacity: 1;
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
+	visibility: visible;
 	-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
 	transition: transform 0.3s ease, opacity 0.3s ease;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+.dotstyle-fall li.current a {
+	opacity: 0;
+	-webkit-transform: translateY(200%);
+	transform: translateY(200%);
 }
