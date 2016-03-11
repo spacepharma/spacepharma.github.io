@@ -90,8 +90,6 @@ canvas.canvid {
   padding: 0;
   margin: auto;
   display: block;
-  width: 600;
-  height: 900px;
   position: fixed;
   top: 20px;
   bottom: 0;
