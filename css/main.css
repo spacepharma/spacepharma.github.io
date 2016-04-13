@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5 {
 
 h1 {
   font-weight: 400;
-  font-size: 42px;
+  font-size: 28px;
 }
 
 .bm-burger-button {
@@ -102,14 +102,13 @@ canvas.canvid {
   bottom: 0px;
   left: 0px;
   right: 0px;
+  z-index: 0;
 }
 
-.center-item {
-    padding-top: 40px;
-    width: auto;
-    height: auto;
-    line-height: 20px;
-    text-align: center;
+.brand-intro {
+  width: auto;
+  height: auto;
+  text-align: center;
 }
 
 .dot-container {
