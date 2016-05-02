@@ -5,9 +5,20 @@ html {
   width: 100%;
 }
 
+@font-face {
+  font-family: 'Exo Light';
+  src: url(../fonts/Exo-Light.otf);
+}
+
+@font-face {
+  font-family: 'BrandonLight';
+  src: url(../fonts/Brandon_light.otf);
+}
+
+
 body {
   color: #111;
-  font-family: 'Titillium Web';
+  font-family: 'BrandonLight';
   overflow-x: hidden;
   background-color: white;
   min-width: 450px;
@@ -16,8 +27,7 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-  font-family: 'Titillium Web';
-  font-weight: lighter;
+  font-family: 'BrandonLight';
 }
 
 h1 {
@@ -84,6 +94,15 @@ h1 {
     }
 }
 
+@-webkit-keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to   {
+      opacity: 0;
+    }
+}
+
 @-webkit-keyframes scaleIn {
     from {
       transform: scale(0.5);
@@ -93,8 +112,61 @@ h1 {
     }
 }
 
+@-webkit-keyframes scaleOut {
+    from {
+      transform: scale(1);
+    }
+    to   {
+      transform: scale(0.5);
+    }
+}
+
+.news-headline {
+  font-family: 'Lato';
+  font-weight: 700;
+  position: relative;
+  top: -300px;
+  width: 40vw;
+  height: 700px;
+  left: 10vw;
+  color: white;
+  line-height: 70px;
+  text-shadow: -4px -2px 10px #777;
+  font-size: 45px;
+}
+
+.nav-link a {
+  font-family: 'Exo Light';
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  border-bottom: rgba(20,20,20,0) 1px solid;
+  -webkit-transition: border-bottom .3s ease-in-out;
+}
+.nav-link a:hover {
+  border-bottom: rgba(255, 255, 255, 1) 1px solid;
+}
+
+.pickgradient{
+  position:relative;
+  display:inline-block;
+}
+.pickgradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 30%); /* FF3.6+ */
+  background: -webkit-gradient(linear, middle top, middle bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(30%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 30%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 30%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 30%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 30%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
 canvas.canvid {
-  -webkit-animation: scaleIn 3s, fadeIn 2s;
   padding: 0;
   margin: auto;
   display: block;
@@ -103,6 +175,7 @@ canvas.canvid {
   left: 0px;
   right: 0px;
   z-index: 0;
+  opacity: 0;
 }
 
 .brand-intro {
