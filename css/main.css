@@ -139,6 +139,15 @@ p {
   border-radius: 2px;
 }
 
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 14px;
+}
+
 .nav-link a {
   animation: fadeIn 2s;
   font-family: 'Exo Light';
@@ -149,7 +158,8 @@ p {
   -webkit-transition: border-bottom .3s ease-in-out;
 }
 .nav-link a:hover {
-  border-bottom: grey 1px solid;
+  text-decoration: none;
+  border-bottom: white 1px solid;
 }
 
 .pickgradient{
