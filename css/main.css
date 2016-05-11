@@ -28,11 +28,7 @@ body {
 
 h1,h2,h3,h4,h5 {
   font-family: 'BrandonLight';
-}
-
-h1 {
   font-weight: 100;
-  font-size: 28px;
 }
 
 p {
@@ -216,6 +212,7 @@ canvas.canvid {
 }
 
 .dotstyle ul {
+  animation: fadeIn 2.5s;
   transform: rotateZ(90deg);
 	list-style: none;
 	cursor: default;
@@ -229,27 +226,27 @@ canvas.canvid {
 }
 
 .dotstyle li {
-  padding: 5px;
+  padding: 0px;
 	position: relative;
 	display: block;
 	float: left;
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	cursor: pointer;
 }
 
 .dotstyle-fall li::after {
 	content: '';
 	position: absolute;
-	width: 35%;
-	height: 100%;
+	width: 20%;
+	height: 20%;
 	visibility: visible;
-	opacity: 0.05;
+	opacity: 0.2;
 	left: 0;
   background-color: #111;
-	border-radius: 20%;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
+	border-radius: 50%;
+	-webkit-transform: translateY(200%);
+	transform: translateY(200%);
 	-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
 	transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
 }
@@ -262,16 +259,14 @@ canvas.canvid {
 .dotstyle-fall li.current::after {
 	opacity: 1;
 	visibility: visible;
+  /*background-color: #fff;*/
+  height: 20%;
+  width: 70%;
+  border-radius: 15%;
 	-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
 	transition: transform 0.3s ease, opacity 0.3s ease;
-	-webkit-transform: translateY(0%);
-	transform: translateY(0%);
-}
-
-.dotstyle-fall li.current a {
-	opacity: 0.5;
-	-webkit-transform: translateY(-300%);
-	transform: translateY(-300%);
+	-webkit-transform: translateY(-100%) rotateZ(-270deg);
+	transform: translateY(-100%) rotateZ(-270deg);
 }
 
 @-moz-keyframes bounce {
