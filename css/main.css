@@ -15,7 +15,6 @@ html {
   src: url(../fonts/Brandon_light.otf);
 }
 
-
 body {
   color: #111;
   font-family: 'BrandonLight';
@@ -33,6 +32,10 @@ h1,h2,h3,h4,h5 {
 
 p {
   font-size: 18px;
+}
+
+a, a:active, a:focus {
+outline: none;
 }
 
 .bm-burger-button {
