@@ -220,7 +220,7 @@ outline: none;
   -moz-user-select: none;      /* Firefox */
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;
-  animation: fadeIn 2s; 
+  animation: fadeIn 2s;
 }
 
 canvas.canvid {
@@ -288,7 +288,7 @@ canvas.canvid {
 	height: 20%;
 	opacity: 0.2;
 	left: 0;
-  background-color: #111;
+  background-color: #88d;
 	border-radius: 50%;
 	-webkit-transform: translateY(200%);
 	transform: translateY(200%);
