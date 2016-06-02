@@ -6,11 +6,6 @@ html {
 }
 
 @font-face {
-  font-family: 'Exo Light';
-  src: url(../fonts/Exo-Light.otf);
-}
-
-@font-face {
   font-family: 'BrandonLight';
   src: url(../fonts/Brandon_light.otf);
 }
@@ -20,7 +15,6 @@ body {
   font-family: 'BrandonLight';
   overflow-x: hidden;
   background-color: white;
-  min-width: 450px;
   height: 100%;
   width: 100%;
 }
@@ -29,7 +23,6 @@ body {
 
 .ui.header,h1,h2,h3,h4,h5,p {
   font-family: 'BrandonLight';
-  font-weight: 100;
 }
 
 p {
@@ -119,7 +112,7 @@ outline: none;
 }
 
 .news-headline {
-  font-family: 'Lato';
+  font-family: 'BrandonLight';
   font-weight: 100;
   position: relative;
   min-width: 350px;
@@ -129,7 +122,6 @@ outline: none;
   color: white;
   line-height: 70px;
   text-shadow: -4px -2px 10px #777;
-
   animation: fadeIn 2s, scaleInLight 2s;
   background: -moz-linear-gradient(top, rgba(70,50,0,0.20) 0%, rgba(70,50,0,0.35) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(70,50,0,0.20)), color-stop(100%,rgba(70,50,0,0.35))); /* Chrome,Safari4+ */
@@ -165,7 +157,7 @@ outline: none;
 
 .nav-link-black a {
   animation: fadeIn 2s;
-  font-family: 'Exo Light';
+  font-family: 'BrandonLight';
   padding: 5px;
   color: black;
   text-decoration: none;
@@ -180,7 +172,7 @@ outline: none;
 
 .nav-link a {
   animation: fadeIn 2s;
-  font-family: 'Exo Light';
+  font-family: 'BrandonLight';
   padding: 5px;
   color: white;
   text-decoration: none;
