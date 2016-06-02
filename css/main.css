@@ -279,7 +279,7 @@ canvas.canvid {
 	height: 20%;
 	opacity: 0.2;
 	left: 0;
-  background-color: #88d;
+  background-color: #89e;
 	border-radius: 50%;
 	-webkit-transform: translateY(200%);
 	transform: translateY(200%);
@@ -294,13 +294,13 @@ canvas.canvid {
 
 .dotstyle-fall li.current::after {
 	opacity: 1;
-  height: 30%;
-  width: 70%;
+  height: 60%;
+  width: 60%;
   border-radius: 15%;
 	-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
 	transition: transform 0.3s ease, opacity 0.3s ease;
-	-webkit-transform: translateX(-35%) translateY(-100%) rotateZ(-90deg);
-	transform: translateX(-35%) translateY(-100%) rotateZ(-90deg);
+	-webkit-transform: translateX(-35%) translateY(-100%) rotateZ(-45deg);
+	transform: translateX(-35%) translateY(-100%) rotateZ(-45deg);
 }
 
 @-moz-keyframes bounce {
@@ -425,7 +425,7 @@ canvas.canvid {
     }
 
     100% {
-        opacity: 1;
+        opacity: 0.7;
         transform: none
     }
 }
@@ -441,7 +441,7 @@ canvas.canvid {
     }
 
     100% {
-        opacity: 1;
+        opacity: 0.7;
         transform: none
     }
 }
