@@ -46,6 +46,9 @@ outline: none;
   top: 36px;
   opacity: 0.7;
 }
+div.bm-burger-button {
+  z-index: 3 !important;
+}
 
 .right .bm-burger-button {
   left: initial;
@@ -53,7 +56,7 @@ outline: none;
 }
 
 .bm-burger-bars {
-  background: #111;
+  background: #777;
 }
 
 .bm-morph-shape {
@@ -63,7 +66,6 @@ outline: none;
 .bm-menu {
   padding: 5.5em 1.5em 0;
   background: white;
-
 }
 
 .bm-item-list > a {
