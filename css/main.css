@@ -10,6 +10,11 @@ html {
   src: url(../fonts/Brandon_light.otf);
 }
 
+@font-face {
+  font-family: 'BrandonBold';
+  src: url(../fonts/Brandon_bld.otf);
+}
+
 body {
   color: #111;
   font-family: 'BrandonLight';
