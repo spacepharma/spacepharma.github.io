@@ -198,7 +198,7 @@ outline: none;
   background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 10%); /* W3C */
 }
 
-.imageloader img {
+.news-image, .imageloader img {
   height: 100vh;
   width: 100vw;
   display: block;
