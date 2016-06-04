@@ -38,6 +38,18 @@ a, a:active, a:focus {
 outline: none;
 }
 
+.bm-menu-wrap {
+  z-index: 5 !important;
+}
+
+.bm-overlay {
+  z-index: 4 !important;
+}
+
+.bm-burger-button {
+  z-index: 3 !important;
+}
+
 .bm-burger-button {
   position: fixed;
   width: 36px;
@@ -45,9 +57,6 @@ outline: none;
   left: 36px;
   top: 36px;
   opacity: 0.7;
-}
-div.bm-burger-button {
-  z-index: 3 !important;
 }
 
 .right .bm-burger-button {
@@ -60,24 +69,21 @@ div.bm-burger-button {
 }
 
 .bm-morph-shape {
-  fill: white;
+  fill: #333;
 }
 
 .bm-menu {
-  padding: 5.5em 1.5em 0;
-  background: white;
+  padding-top: 12em;
+  background: #333;
 }
 
 .bm-item-list > a {
-  padding: 0.8em;
-  color: #111;
-  padding: 0.8em;
-  font-size: 1.25em;
-  margin-left: 55%;
-}
-
-.bm-item-list > a:hover {
-  color: #111;
+  padding-bottom: 2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #77b;
+  font-size: 1.9em;
+  margin-left: 3.5em;
 }
 
 .post > p > img {
@@ -262,6 +268,7 @@ canvas.canvid {
 
 .dot-container {
   position: fixed;
+  left:-30px;
   top: 50%;
   z-index: 2;
 }
