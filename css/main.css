@@ -73,17 +73,18 @@ outline: none;
 }
 
 .bm-menu {
-  padding-top: 12em;
+  padding-top: 8vh;
   background: #333;
 }
 
 .bm-item-list > a {
-  padding-bottom: 2em;
+  padding: 1em;
   text-transform: uppercase;
+  text-align: center;
   white-space: nowrap;
   color: #77b;
   font-size: 1.9em;
-  margin-left: 3.5em;
+  margin-left: 1em;
 }
 
 .post > p > img {
