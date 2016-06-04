@@ -66,6 +66,7 @@ outline: none;
 
 .bm-burger-bars {
   background: #777;
+  height: 2px !important;
 }
 
 .bm-morph-shape {
