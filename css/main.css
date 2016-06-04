@@ -159,6 +159,7 @@ div.bm-burger-button {
 }
 
 .nav-link-black a {
+  white-space: nowrap;
   animation: fadeIn 2s;
   font-family: 'BrandonLight';
   padding: 5px;
@@ -174,6 +175,7 @@ div.bm-burger-button {
 }
 
 .nav-link a {
+  white-space: nowrap;
   animation: fadeIn 2s;
   font-family: 'BrandonLight';
   padding: 5px;
