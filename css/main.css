@@ -22,12 +22,14 @@ body {
   background-color: white;
   height: 100%;
   width: 100%;
+  font-weight:100;
 }
 
 
 
 .ui.header,h1,h2,h3,h4,h5,p {
   font-family: 'BrandonLight';
+  font-weight:100;
 }
 
 p {
