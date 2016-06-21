@@ -462,7 +462,7 @@ canvas.canvid {
 }
 
 @-webkit-keyframes blur {
-   100%  { -webkit-filter: blur(0px); }
+  100%  { -webkit-filter: blur(0px); }
   0%,50% { -webkit-filter: blur(2px); }
 }
 
