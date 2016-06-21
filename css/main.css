@@ -279,7 +279,7 @@ canvas.canvid {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  animation: fadeIn 1s, scaleInLight 1s;
+  animation: fadeIn 1s, scaleInLight 1s, blur 1s;
 }
 
 .brand-intro {
@@ -459,6 +459,11 @@ canvas.canvid {
     100% {
         opacity: 1
     }
+}
+
+@-webkit-keyframes blur {
+   100%  { -webkit-filter: blur(0px); }
+  0%,50% { -webkit-filter: blur(2px); }
 }
 
 .fadeIn {
