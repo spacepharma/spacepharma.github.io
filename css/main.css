@@ -17,8 +17,8 @@ html {
 
 .brightness{
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'brightness\'><feColorMatrix type=\'matrix\' values=\'1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0\'/></filter></svg>#brightness"); /* Firefox 3.5+ */
-    -webkit-filter:blur(1px) brightness(65%); /* Chrome 19+ & Safari 6+ */
-    filter:blur(1px) brightness(65%); /* Chrome 19+ & Safari 6+ */
+    -webkit-filter:blur(1px) brightness(40%); /* Chrome 19+ & Safari 6+ */
+    filter:blur(1px) brightness(40%); /* Chrome 19+ & Safari 6+ */
 }
 
 body {
@@ -206,12 +206,14 @@ outline: none;
   font-family: 'BrandonLight';
   padding: 5px;
   color: white;
+  opacity: 0.6;
   text-decoration: none;
   border-bottom: rgba(20,20,20,0) 1px solid;
-  -webkit-transition: border-bottom .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out, border-bottom .3s ease-in-out;
 }
 .nav-link a:hover {
   text-decoration: none;
+  opacity: 0.95;
   border-bottom: white 1px solid;
 }
 
@@ -610,4 +612,29 @@ canvas.canvid {
 .full-size {
   width: 100vw;
   height: 100vh;
+}
+
+@-webkit-keyframes thread {
+  0%   { width: 8%; }
+  50% { width: 8%; }
+  80% { width: 0px;}
+  100%{ width: 8%;}
+}
+@-moz-keyframes thread {
+  0%   { width: 8%; }
+  50% { width: 8%; }
+  80% { width: 0px;}
+  100%{ width: 8%;}
+}
+@-o-keyframes thread {
+  0%   { width: 8%; }
+  50% { width: 8%; }
+  80% { width: 0px;}
+  100%{ width: 8%;}
+}
+@keyframes thread {
+  0%   { width: 8%; }
+  50% { width: 8%; }
+  80% { width: 0px;}
+  100%{ width: 8%;}
 }
