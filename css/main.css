@@ -26,8 +26,7 @@ body {
   font-family: 'BrandonLight';
   overflow-x: hidden;
   background-color: white;
-  height: 100%;
-  width: 100%;
+  margin: 0;
   font-weight:100;
 }
 .ui.card>.content>.header, .ui.cards>.card>.content>.header,
