@@ -47,17 +47,18 @@ body {
 
 .video-container {
   background: #aaa;
+  width: 100vw;
+  padding: 0;
+  maring: 0;
 }
 
 video.video-fit {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  padding: 0;
   width: 100vw;
-  height: auto;
+  height: 100vh;
+  object-fit:cover;
   z-index: 0;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
