@@ -11,7 +11,9 @@ body {
   overflow-x: hidden;
   background-color: white;
   margin: 0;
+  padding: 0;
   font-weight:100;
+  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -24,10 +26,27 @@ body {
   src: url(../fonts/Brandon_bld.otf);
 }
 
+.tracks-nav {
+  background-color: white;
+  margin-top: -100px;
+  height: 200px;
+  transform: translateZ(1px);
+}
+
+.tracks-nav > .explore-title {
+  padding-top: 15px;
+  text-align: center;
+  width: 100vw;
+}
+
 .brightness {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'brightness\'><feColorMatrix type=\'matrix\' values=\'1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0\'/></filter></svg>#brightness"); /* Firefox 3.5+ */
   -webkit-filter:blur(2px) brightness(30%); /* Chrome 19+ & Safari 6+ */
   filter:blur(2px) brightness(30%); /* Chrome 19+ & Safari 6+ */
+}
+
+.video-container {
+  background: #aaa;
 }
 
 video.video-fit {
@@ -36,15 +55,41 @@ video.video-fit {
   left: 50%;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  padding: 0;
+  width: 100vw;
   height: auto;
-  z-index: -100;
+  z-index: 0;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: #333
+  background: #aaa;
   background-size: cover;
+}
+
+.seven.wide.column.left-content.dark {
+  padding: 60px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+
+.left-content h2 {
+  font-family: 'BrandonLight';
+  font-size: 34px;
+}
+
+.left-content p {
+  margin-top: 50px;
+  font-family: 'BrandonLight';
+  font-size: 26px;
+}
+
+.fullpage-image {
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  margin-top: 10px;
 }
 
 .ui.card>.content>.header, .ui.cards>.card>.content>.header,
