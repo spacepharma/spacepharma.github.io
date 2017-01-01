@@ -5,6 +5,15 @@ html {
   width: 100%;
 }
 
+body {
+  color: #111;
+  font-family: 'BrandonLight';
+  overflow-x: hidden;
+  background-color: white;
+  margin: 0;
+  font-weight:100;
+}
+
 @font-face {
   font-family: 'BrandonLight';
   src: url(../fonts/Brandon_light.otf);
@@ -15,20 +24,29 @@ html {
   src: url(../fonts/Brandon_bld.otf);
 }
 
-.brightness{
+.brightness {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'brightness\'><feColorMatrix type=\'matrix\' values=\'1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0\'/></filter></svg>#brightness"); /* Firefox 3.5+ */
-  -webkit-filter:blur(1px) brightness(40%); /* Chrome 19+ & Safari 6+ */
-  filter:blur(1px) brightness(40%); /* Chrome 19+ & Safari 6+ */
+  -webkit-filter:blur(2px) brightness(30%); /* Chrome 19+ & Safari 6+ */
+  filter:blur(2px) brightness(30%); /* Chrome 19+ & Safari 6+ */
 }
 
-body {
-  color: #111;
-  font-family: 'BrandonLight';
-  overflow-x: hidden;
-  background-color: white;
-  margin: 0;
-  font-weight:100;
+video.video-fit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: #333
+  background-size: cover;
 }
+
 .ui.card>.content>.header, .ui.cards>.card>.content>.header,
 .ui.header,.content,h1,h2,h3,h4,h5,p,a {
   font-family: 'BrandonLight';
