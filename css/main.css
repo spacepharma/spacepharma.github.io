@@ -69,7 +69,7 @@ video.video-fit {
 }
 
 .seven.wide.column.left-content.dark {
-  padding: 60px;
+  padding: 50px;
   background-color: rgba(0,0,0,0.6);
   color: white;
 }
@@ -80,9 +80,9 @@ video.video-fit {
 }
 
 .left-content p {
-  margin-top: 50px;
+  margin-top: 30px;
   font-family: 'BrandonLight';
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .fullpage-image {
