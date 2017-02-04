@@ -49,7 +49,7 @@ body {
   background: #aaa;
   width: 100vw;
   padding: 0;
-  maring: 0;
+  margin: 0;
 }
 
 video.video-fit {
@@ -68,10 +68,43 @@ video.video-fit {
   background-size: cover;
 }
 
-.seven.wide.column.left-content.dark {
-  padding: 50px;
+.left-content.dark {
   background-color: rgba(0,0,0,0.6);
   color: white;
+}
+
+.left-content.form {
+  padding-top: 10vh;
+}
+
+img.side-image-contained {
+  object-fit: contain;
+  margin-top: 11vh;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  transition: all .15s ease-in-out;
+  -webkit-filter: invert(.7) drop-shadow(0px 0px 0px rgba(1,1,1,0.1));
+  filter: invert(.7) drop-shadow(0px 0px 0px rgba(1,1,1,0.1));
+}
+
+img.side-image-contained:hover {
+  transform: perspective( 660px );
+  transform: rotateZ(3deg) translateY(-15px) translateX(30px);
+  -webkit-filter: invert(.1) drop-shadow(0px 16px 90px rgba(222,222,222,0.9));
+   filter: invert(.1) drop-shadow(0px 16px 90px rgba(222,222,222,0.9));
+}
+
+img.side-image-contained:active {
+  -webkit-filter: invert(0) drop-shadow(1px 16px 150px rgba(255,255,255,1));
+   filter: invert(0) drop-shadow(1px 16px 150px rgba(255,255,255,1));
+}
+
+.left-content {
+  padding: 50px;
+  margin: 0 0;
+  height: 100%;
+  width: 100%;
 }
 
 .left-content h2 {
@@ -689,6 +722,22 @@ canvas.canvid {
   border-radius: 0px;
   top: 0;
   left: 0;
+}
+
+.full-page-slide-content {
+  position: absolute;
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.ui.grid>.row>.column {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.ui.grid {
+  margin: -1rem 0 !important;
 }
 
 @-webkit-keyframes thread {
