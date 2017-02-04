@@ -125,6 +125,32 @@ img.side-image-contained:active {
   position: relative;
 }
 
+img.fullpage-image {
+  -webkit-animation: filter-animation 15s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    transform: translateX(0px);
+    -webkit-filter: blur(0px) ;
+  }
+
+  40% {
+    transform: translateX(-4px) translateY(9px);
+    -webkit-filter: blur(6px) saturation(1);
+  }
+  50% {
+    transform: translateX(-2px) translateY(6px);
+    -webkit-filter: blur(2px) contrast(2);
+  }
+  80% {
+    -webkit-filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
 .ui.card>.content>.header, .ui.cards>.card>.content>.header,
 .ui.header,.content,h1,h2,h3,h4,h5,p,a {
   font-family: 'BrandonLight';
