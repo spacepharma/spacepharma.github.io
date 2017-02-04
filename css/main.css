@@ -90,7 +90,6 @@ video.video-fit {
   height: 100vh;
   width: 100vw;
   position: relative;
-  margin-top: 10px;
 }
 
 .ui.card>.content>.header, .ui.cards>.card>.content>.header,
@@ -680,6 +679,16 @@ canvas.canvid {
 .full-size {
   width: 100vw;
   height: 100vh;
+}
+
+.top-shadow-img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: inset 0px 130px 180px 0px #000000;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
 }
 
 @-webkit-keyframes thread {
