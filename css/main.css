@@ -126,28 +126,34 @@ img.side-image-contained:active {
 }
 
 img.fullpage-image {
-  -webkit-animation: filter-animation 15s infinite;
+  -webkit-animation: filter-animation 14s infinite;
 }
 
 @-webkit-keyframes filter-animation {
   0% {
     transform: translateX(0px);
-    -webkit-filter: blur(0px) ;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
   }
 
   40% {
     transform: translateX(-4px) translateY(9px);
-    -webkit-filter: blur(6px) saturation(1);
+    -webkit-filter: blur(4px) saturate(2);
+    filter: blur(4px) saturate(2);
   }
-  50% {
-    transform: translateX(-2px) translateY(6px);
-    -webkit-filter: blur(2px) contrast(2);
+  55% {
+    transform: translateX(-1px) translateY(4px);
+    -webkit-filter: blur(2px) contrast(1) saturate(1.5);
+    filter: blur(2px) contrast(1) saturate(1.5);
   }
   80% {
-    -webkit-filter: blur(0px);
+    transform: translateX(-2px) translateY(6px);
+    -webkit-filter: blur(1px)  contrast(1.6);
+    filter: blur(1px) contrast(1.6);
   }
   100% {
     -webkit-filter: blur(0px);
+    filter: blur(0px);
   }
 }
 
