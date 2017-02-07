@@ -125,9 +125,9 @@ img.side-image-contained:active {
   position: relative;
 }
 
-img.fullpage-image {
+/*img.fullpage-image {
   -webkit-animation: filter-animation 14s infinite;
-}
+}*/
 
 @-webkit-keyframes filter-animation {
   0% {
