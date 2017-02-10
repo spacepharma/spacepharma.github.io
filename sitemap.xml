@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://www.space4p.com</loc>
+    <image:image>
+       <image:loc>http://space4p.com/media/spacepharma_horizontal_new_logo_black_shades_mobile.png</image:loc>
+       <image:caption>The Automated Space Microgravity Laboratory</image:caption>
+    </image:image>
+    <video:video>
+      <video:content_loc>
+        http://space4p.com/media/spx.mp4
+      </video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">
+        http://space4p.com/media/spx.mp4
+      </video:player_loc>
+      <video:thumbnail_loc>
+        http://space4p.com/media/spacepharma_horizontal_new_logo_black_shades_mobile.png
+      </video:thumbnail_loc>
+      <video:title></video:title>
+      <video:description>
+        Crafted for Scientists that Thrive by Redefining what is Possible.
+      </video:description>
+    </video:video>
+  </url>
+</urlset>
