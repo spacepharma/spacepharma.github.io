@@ -185,6 +185,7 @@ outline: none;
 
 .bm-menu-wrap {
   z-index: 5 !important;
+  top: 0;
 }
 
 .bm-overlay {
