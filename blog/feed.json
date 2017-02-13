@@ -6,7 +6,7 @@
       "email": "priel.ido@space4p.com",
       "publishedAt": "2017-02-06T15:32:00",
       "filename": "2.md",
-      "title": "We are launching soon!",
+      "title": "We are Launching Soon!",
       "heroImageSrc": "blog/pre-launch.jpg"
     },
     {
@@ -26,6 +26,15 @@
       "filename": "4.md",
       "title": "SpacePharma Opens U.S Office",
       "heroImageSrc": "blog/USA.jpg"
+    },    
+    {
+      "author":"Ido Priel",
+      "authorPosition": "COO",
+      "email": "priel.ido@space4p.com",
+      "publishedAt": "2016-01-06T15:32:00",
+      "filename": "6.md",
+      "title": "SP is 1 of 10 Space Companies to Watch",
+      "heroImageSrc": "blog/space.jpg"
     },    
     {
       "author":"Ido Priel",
