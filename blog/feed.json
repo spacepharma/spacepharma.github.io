@@ -9,6 +9,15 @@
       "title": "",
       "heroImageSrc": "blog/logo.jpg"
     },
+      {
+      "author":"Iftach Kesten",
+      "authorPosition": "COO",
+      "email": "kesten.iftach@space4p.com",
+      "publishedAt": "2017-12-31T10:32:00",
+      "filename": "20.md",
+      "title": "NewSpace People - SpacePharma Ranked 11 out of Top 1,000 companies in 2017",
+      "heroImageSrc": "blog/NP.jpg"
+    },    
     {
       "author":"Iftach Kesten",
       "authorPosition": "COO",
