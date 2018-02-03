@@ -1,9 +1,18 @@
 {
   "posts": [
+    {
+      "author":"Michael Kobaivanov",
+      "authorPosition": "Software Engineer",
+      "email": "kobaivanov.michael@space4p.com",
+      "publishedAt": "2018-02-03T15:32:00",
+      "filename": "24.md",
+      "title": "Take a glimpse at what we do at SpacePharma R&D",
+      "heroImageSrc": "blog/picture_24.jpg"
+    },
      {
       "author":"Michael Kobaivanov",
       "authorPosition": "Software Engineer",
-      "email": "michael.kobaivanov@space4p.com",
+      "email": "kobaivanov.michael@space4p.com",
       "publishedAt": "2018-01-30T15:32:00",
       "filename": "23.md",
       "title": "CEO Yossi Yamin lectures at the 13th Ilan Ramon International Space Conference",
