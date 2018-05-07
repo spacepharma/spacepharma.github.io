@@ -1,13 +1,13 @@
 {
   "posts": [
     {
-      "author":"Michael Kobaivanov",
-      "authorPosition": "Software Engineer",
-      "email": "kobaivanov.michael@space4p.com",
+      "author":"Alon Yamin",
+      "authorPosition": "Assistent",
+      "email": "yamin.alon@space4p.com",
       "publishedAt": "2018-04-04T11:32:00",
-      "filename": "29.md",
-      "title": "RBC Signals Adds to Global Ground Network with SpacePharma SA Agreement",
-      "heroImageSrc": "blog/picture_29.jpg"
+      "filename": "30.md",
+      "title": "SOPHiA Genetics and SpacePharma made it to the prestigious Fast Company’s Top 10 Most Innovative Companies in Biotech and in Space respectively.",
+      "heroImageSrc": "blog/picture_30.jpg"
     },
     {
       "author":"Michael Kobaivanov",
