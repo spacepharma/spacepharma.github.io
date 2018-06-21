@@ -1,5 +1,14 @@
 {
   "posts": [
+     {
+      "author":"SpaceBoy",
+      "authorPosition": "Assistent",
+      "email": "yamin.alon@space4p.com",
+      "publishedAt": "2018-06-21T16:12:00",
+      "filename": "35.md",
+      "title": "First UZH Space Hub research flight campaign",
+      "heroImageSrc": "blog/picture_35.jpg"
+    },
     {
       "author":"SpaceBoy",
       "authorPosition": "Assistent",
